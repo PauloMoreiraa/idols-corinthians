@@ -44,7 +44,6 @@ body::-webkit-scrollbar-thumb {
   height: 10vh;
   width: 100%;
   background-color: transparent;
-  z-index: 999;
   padding: 0 5% 0 5%;
   transition: 0.3s;
 }
@@ -58,11 +57,6 @@ body::-webkit-scrollbar-thumb {
   margin-top: -1%;
   margin-left: 2%;
 }
-@media (max-width: 838px) {
-  .navbar__logo {
-    font-size: 2.5vh;
-  }
-}
 .navbar__logo b {
   color: #fff;
 }
@@ -73,11 +67,13 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
 }
 .navbar ul li {
   list-style: none;
 }
 .navbar ul li a {
+  font-weight: 700;
   text-decoration: none;
   color: #fff;
   opacity: 0.7;
@@ -97,84 +93,4 @@ body::-webkit-scrollbar-thumb {
 }
 .navbar.sticky ul li a {
   color: rgb(252, 252, 252);
-}
-
-/*Menu Mobile*/
-#btn-mobile {
-  display: none;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 35px;
-  font-weight: bold;
-  border: none;
-  padding: 15px;
-}
-
-@media (max-width: 560px) {
-  .navbar {
-    height: 7vh;
-    width: 100%;
-    background-color: #000;
-    z-index: 999;
-    padding: 0 5% 0 5%;
-    transition: 0.3s;
-  }
-  .navbar ul {
-    background-color: #f00;
-  }
-  .navbar ul li a {
-    color: #fff;
-  }
-  .navbar.sticky {
-    background-color: #000;
-    height: 7vh;
-    transition: 0.8s;
-  }
-  .navbar.sticky ul li a {
-    color: #fff;
-  }
-  #btn-mobile {
-    display: block;
-    position: absolute;
-    z-index: 997;
-    right: 0;
-  }
-  #logo {
-    z-index: 1;
-  }
-  #menu {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    -webkit-backdrop-filter: blur(15px);
-            backdrop-filter: blur(15px);
-    height: 40vh;
-    width: 0%;
-    margin-top: 50%;
-    font-size: 20px;
-  }
-  #nav #menu {
-    display: flex;
-    margin-left: 3000px;
-    transition: 1s;
-  }
-  #nav.active #menu {
-    display: flex;
-    width: 100%;
-    margin-left: 0;
-    right: 0;
-    transition: 0.5s;
-  }
-}
-@media (max-width: 400px) {
-  #btn-mobile {
-    display: block;
-    position: absolute;
-    z-index: 997;
-    text-align: right;
-    right: 0;
-  }
 }/*# sourceMappingURL=menu.css.map */
