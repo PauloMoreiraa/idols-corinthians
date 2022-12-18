@@ -205,8 +205,12 @@ section{
         height: 100%;
        // background-color: aquamarine;
         display: flex;
-            align-items: center;
-            justify-content: center;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 838px){
+            width: 80%;
+        }
 
         .composicao{
             display: flex;
