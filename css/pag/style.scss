@@ -804,7 +804,7 @@ section{
                
                 .estatisticas{
                     width: 70%;
-                    height: 80vh;
+                    height: 90vh;
                     background-image: url('../../img/bck-titulos.png');
                     background-size: cover;
                     position: absolute;
@@ -817,6 +817,7 @@ section{
 
                     @media (max-width: 838px){
                         flex-direction: column;
+                        width: 90%;
                         
                     }
 
@@ -828,9 +829,10 @@ section{
                         align-items: center;
 
                         @media (max-width: 838px){
+                            height: 40%;
                             width: 100%;
                             justify-content: center;
-                        }
+                            align-items: flex-end;                        }
 
                         img{
                             width: 100%;
@@ -851,6 +853,7 @@ section{
                         
                         @media (max-width: 838px){
                             font-size: 2.5vh;
+                            height: 60%;
                             width: 100%;
                             padding: 2%;
                             text-align: center;
@@ -862,7 +865,7 @@ section{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 30%;
+                            width: 40%;
                             height: 60px;
                             background-color: #000;
                             
