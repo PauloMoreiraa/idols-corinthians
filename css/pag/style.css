@@ -189,6 +189,10 @@ section .atalho .card .txt-atalho {
   }
 }
 
+#deep {
+  color: #cba0c2;
+}
+
 .historia {
   height: auto;
   width: 100%;
