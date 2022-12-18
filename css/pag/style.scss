@@ -215,11 +215,11 @@ section{
             gap: 10px;
 
             .art-img{
-                width: 500px;
+                width: 400px;
                 height: 400px;
                 background-image: url('../../img/art1.png');
                 background-repeat: no-repeat;
-                background-size: 100%;
+                background-size: cover;
                 border-radius: 18px;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.089);
                 
