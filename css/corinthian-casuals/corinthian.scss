@@ -1,0 +1,10 @@
+#deep{
+    color: rgb(224, 116, 210);
+    text-decoration: none;
+    transition: .4s;
+
+    &:hover{
+        color: rgb(138, 83, 58);
+        transition: .4s;
+    }
+}

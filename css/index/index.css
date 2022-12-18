@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, a::-moz-selection, span::-moz-selection {
+  color: #fbfbfb;
+  background-color: rgba(34, 34, 34, 0.644);
+}
+
+p::selection, h1::selection, h2::selection, a::selection, span::selection {
+  color: #fbfbfb;
+  background-color: rgba(34, 34, 34, 0.644);
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif !important;
+}
+
+body::-webkit-scrollbar {
+  width: 3px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0); /* color of the scroll thumb */
+}/*# sourceMappingURL=index.css.map */

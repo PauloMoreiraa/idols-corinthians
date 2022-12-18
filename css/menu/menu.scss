@@ -1,0 +1,194 @@
+
+@import '../index/index.scss';
+
+.menu{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    z-index: 999;
+    padding: 0 5% 0 5%;
+    transition: .3s;
+
+    &__logo{
+        color: rgba(255, 255, 255, 0.432);
+        font-weight: 900;
+        text-decoration: none;
+        width: 100px;
+        transition: .3s;
+        font-size: 4vh;
+        margin-top: -1%;
+        margin-left: 2%;
+
+        @media(max-width: 838px){
+            font-size: 2.5vh;
+        }
+
+        b{
+            color: $branco-puro;
+        }
+    }
+    
+    ul{
+        display: flex;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        
+
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                opacity: .7;
+                transition: .8s;
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+}
+
+.navbar.sticky{
+    background-color: rgba(0, 0, 0, 0.719);
+    backdrop-filter: blur( 15px );
+    height: 7vh;
+    box-shadow: 0px 0px 20px #000;
+    transition: .8s;
+
+    ul{
+
+        li{
+
+            a{
+                color: rgb(252, 252, 252);
+            }
+        }
+            
+    }
+
+}
+
+/*Menu Mobile*/
+
+#btn-mobile{
+    display: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+}
+
+@media(max-width: 560px){
+
+    .navbar{
+        height: 7vh;
+        width: 100%;
+        background-color: #000;
+        z-index: 999;
+        padding: 0 5% 0 5%;
+        transition: .3s;
+
+
+        ul{
+            background-color: #f00;
+            
+    
+            li{
+                
+                
+                a{
+                    color: #fff;
+                    
+                    
+                }
+            }
+                
+        }
+    }
+
+    .navbar.sticky{
+        background-color: #000;
+        height: 7vh;
+        transition: .8s;
+
+        ul{
+            
+    
+            li{
+                
+                a{
+                    color: #fff;
+                    
+                }
+            }
+                
+        }
+    
+    }
+    #btn-mobile{
+        display: block;
+        position: absolute;
+        z-index: 997;
+        right: 0;
+        
+    }
+
+    #logo{
+        z-index: 1;
+    }
+    #menu{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+        backdrop-filter: blur( 15px );
+        height: 40vh;
+        width: 0%;
+        margin-top: 50%;
+        font-size: 20px;
+
+        
+        
+        
+    }
+    #nav #menu{
+        display: flex;
+        margin-left: 3000px;
+        transition: 1s;
+    }
+
+    #nav.active #menu{
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        right: 0;
+        transition: 0.5s;
+        
+    }
+}
+@media(max-width: 400px){
+    #btn-mobile{
+        display: block;
+        position: absolute;
+        z-index: 997;
+        text-align: right;
+        right: 0;
+    }
+}

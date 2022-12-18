@@ -1,0 +1,917 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, a::-moz-selection, span::-moz-selection {
+  color: #fbfbfb;
+  background-color: rgba(34, 34, 34, 0.644);
+}
+
+p::selection, h1::selection, h2::selection, a::selection, span::selection {
+  color: #fbfbfb;
+  background-color: rgba(34, 34, 34, 0.644);
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif !important;
+}
+
+body::-webkit-scrollbar {
+  width: 3px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0); /* color of the scroll thumb */
+}
+
+.inicio .slide1 {
+  width: 100%;
+  height: 95vh;
+  background-image: url("https://centraldotimao.com.br/wp-content/uploads/2021/05/12139858-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inicio .slide2 {
+  width: 100%;
+  height: 95vh;
+  background-image: url("https://super.abril.com.br/wp-content/uploads/2018/07/5653283b82bee1099f01ada9socrates.jpeg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inicio .slide3 {
+  width: 100%;
+  height: 95vh;
+  background-image: url("https://jpimg.com.br/uploads/2017/11/saoco40.220602.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titulo-sliders {
+  font-size: 10vh;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+}
+@media (max-width: 838px) {
+  .titulo-sliders {
+    font-size: 6vh;
+  }
+}
+
+.btn-vermais {
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  color: #000;
+  transition: 0.3s;
+}
+.btn-vermais:hover {
+  background-color: transparent;
+  transition: 0.3s;
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: 30vh;
+  background-color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .atalho {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .atalho .bx1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+@media (max-width: 838px) {
+  section .atalho .bx1 {
+    width: 33.33%;
+  }
+}
+section .atalho .bx2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+@media (max-width: 838px) {
+  section .atalho .bx2 {
+    width: 33.33%;
+  }
+}
+section .atalho .bx3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+@media (max-width: 838px) {
+  section .atalho .bx3 {
+    width: 33.33%;
+  }
+}
+section .atalho .card {
+  background-color: #fbfbfb;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.027);
+  border: none;
+  max-width: 400px;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .atalho .card ion-icon {
+  font-size: 5vh;
+}
+section .atalho .card span {
+  font-size: 3vh;
+}
+@media (max-width: 838px) {
+  section .atalho .card span {
+    font-size: 2.5vh;
+  }
+}
+section .atalho .card .txt-atalho {
+  text-align: center;
+  padding: 1.5%;
+  font-size: 2vh;
+}
+@media (max-width: 838px) {
+  section .atalho .card .txt-atalho {
+    font-size: 1.5vh;
+  }
+}
+@media (max-width: 838px) {
+  section .atalho .card {
+    width: 90%;
+  }
+}
+
+.historia {
+  height: auto;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+}
+@media (max-width: 900px) {
+  .historia {
+    flex-direction: column-reverse;
+  }
+}
+.historia .conteudo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.historia .conteudo span {
+  font-size: 3vh;
+  font-weight: 800;
+}
+.historia .conteudo p {
+  font-size: 2vh;
+}
+.historia .conteudo span, .historia .conteudo p {
+  padding: 2%;
+}
+@media (max-width: 838px) {
+  .historia .conteudo {
+    width: 100%;
+    padding: 1%;
+  }
+}
+.historia .art1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.historia .art1 .composicao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.historia .art1 .composicao .art-img {
+  width: 600px;
+  height: 500px;
+  background-image: url("../../img/art1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 18px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.089);
+}
+
+.slider-escudo .escudos {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.slider-escudo .escudos .item {
+  background-color: #fff;
+  display: flex;
+  padding: 10px 0 10px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.slider-escudo .escudos .item span {
+  font-weight: 900;
+}
+.slider-escudo .escudos .item img {
+  width: 200px;
+}
+
+.t-topicos {
+  font-size: 7vh;
+  font-weight: 800;
+}
+@media (max-width: 838px) {
+  .t-topicos {
+    font-size: 4vh;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.tx-topicos {
+  font-size: 2vh;
+}
+@media (max-width: 838px) {
+  .tx-topicos {
+    padding: 3%;
+    text-align: justify;
+  }
+}
+
+.mundial {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+.mundial .cont-mundial {
+  width: 100%;
+  min-height: 110vh;
+  height: auto;
+  background-image: url("../../img/bannerjapao.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+@media (max-width: 838px) {
+  .mundial .cont-mundial {
+    flex-direction: column;
+  }
+}
+.mundial .cont-mundial .p1 {
+  width: 50%;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+@media (max-width: 838px) {
+  .mundial .cont-mundial .p1 {
+    width: 100%;
+    height: 40vh;
+  }
+}
+.mundial .cont-mundial .p1 .guerrero {
+  width: 80%;
+  height: 100%;
+  background-image: url("../../img/art2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+.mundial .cont-mundial .p1 .guerrero:hover {
+  transform: translateY(-10px);
+  transition: 0.4s;
+}
+@media (max-width: 838px) {
+  .mundial .cont-mundial .p1 .guerrero {
+    background-size: 80%;
+    margin-left: 70px;
+  }
+}
+.mundial .cont-mundial .p2 {
+  width: 50%;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 4%;
+}
+@media (max-width: 838px) {
+  .mundial .cont-mundial .p2 {
+    width: 100%;
+    height: 60vh;
+  }
+}
+
+.btn-mm {
+  display: flex;
+}
+@media (max-width: 838px) {
+  .btn-mm {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.btn-mm .melhores-momentos {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 100px;
+  background-color: #222;
+  border: 2px #222 solid;
+  transition: 0.4s;
+  color: #fbfbfb;
+  text-decoration: none;
+}
+.btn-mm .melhores-momentos:hover {
+  background-color: transparent;
+  transition: 0.4s;
+  color: #222;
+}
+
+#animacao-bola {
+  margin-left: 1%;
+  -webkit-animation: sobe 2s ease-in-out infinite;
+          animation: sobe 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes sobe {
+  0% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+@keyframes sobe {
+  0% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+.title-titulos {
+  font-size: 4vh;
+  font-weight: 900;
+}
+@media (max-width: 838px) {
+  .title-titulos {
+    font-size: 2.5vh;
+  }
+}
+
+.lvl {
+  font-size: 2vh;
+}
+@media (max-width: 838px) {
+  .lvl {
+    font-size: 1.5vh;
+  }
+}
+
+.titulos {
+  width: 100%;
+  height: 110vh;
+  background-color: #fbfbfb;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.151);
+}
+.titulos .t-titulos {
+  color: #222;
+  font-size: 4vh;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  padding-top: 4%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 838px) {
+  .titulos .t-titulos {
+    padding-top: 2%;
+  }
+}
+.titulos .t-titulos .barra {
+  width: 60px;
+  height: 5px;
+  background-color: #222;
+}
+.titulos .cards-titulos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.titulos .cards-titulos .paulista, .titulos .cards-titulos .brasileirao, .titulos .cards-titulos .copa-do-brasil, .titulos .cards-titulos .supercopa, .titulos .cards-titulos .libertadores, .titulos .cards-titulos .recopa, .titulos .cards-titulos .mundial-de-clubes {
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 40vh;
+  background-color: #fbfbfb;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.021);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+.titulos .cards-titulos .paulista:hover, .titulos .cards-titulos .brasileirao:hover, .titulos .cards-titulos .copa-do-brasil:hover, .titulos .cards-titulos .supercopa:hover, .titulos .cards-titulos .libertadores:hover, .titulos .cards-titulos .recopa:hover, .titulos .cards-titulos .mundial-de-clubes:hover {
+  background: linear-gradient(45deg, #000, #333);
+  transform: translateY(-5px) !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.116);
+  transition: 0.4s;
+  color: #fff;
+}
+@media (max-width: 838px) {
+  .titulos .cards-titulos .paulista, .titulos .cards-titulos .brasileirao, .titulos .cards-titulos .copa-do-brasil, .titulos .cards-titulos .supercopa, .titulos .cards-titulos .libertadores, .titulos .cards-titulos .recopa, .titulos .cards-titulos .mundial-de-clubes {
+    width: 150px;
+    height: 20vh;
+  }
+}
+.titulos .cards-titulos .paulista .img-paulista {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/fpf.png");
+  background-size: 100px;
+}
+@media (max-width: 838px) {
+  .titulos .cards-titulos .paulista .img-paulista {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+}
+.titulos .cards-titulos .brasileirao .img-brasileirao {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/brasileirão.png");
+  background-size: 100px;
+}
+@media (max-width: 838px) {
+  .titulos .cards-titulos .brasileirao .img-brasileirao {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+}
+.titulos .cards-titulos .copa-do-brasil .img-copa-do-brasil {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/copa-do-brasil.png");
+  background-size: 100px;
+}
+@media (max-width: 838px) {
+  .titulos .cards-titulos .copa-do-brasil .img-copa-do-brasil {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+}
+.titulos .cards-titulos .supercopa .img-supercopa {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/supercopa.png");
+  background-size: 100px;
+}
+@media (max-width: 838px) {
+  .titulos .cards-titulos .supercopa .img-supercopa {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+}
+.titulos .cards-titulos .libertadores .img-libertadores {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/libertadores.png");
+  background-size: 100px;
+}
+@media (max-width: 838px) {
+  .titulos .cards-titulos .libertadores .img-libertadores {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+}
+.titulos .cards-titulos .recopa .img-recopa {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/recopa.png");
+  background-size: 100px;
+}
+@media (max-width: 838px) {
+  .titulos .cards-titulos .recopa .img-recopa {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+}
+.titulos .cards-titulos .mundial-de-clubes .img-mundial-de-clubes {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/mundial.png");
+  background-size: 100px;
+}
+@media (max-width: 838px) {
+  .titulos .cards-titulos .mundial-de-clubes .img-mundial-de-clubes {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+}
+
+.democracia {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../img/democracia.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.democracia .conteudo-democracia {
+  width: 100%;
+  height: auto;
+  padding: 4%;
+}
+.democracia .conteudo-democracia .p1 {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 838px) {
+  .democracia .conteudo-democracia .p1 {
+    text-align: center !important;
+    width: 100%;
+  }
+}
+.democracia .conteudo-democracia .p1 span {
+  color: #fbfbfb !important;
+}
+.democracia .conteudo-democracia .p1 p {
+  color: #fbfbfb;
+  width: 50%;
+}
+@media (max-width: 838px) {
+  .democracia .conteudo-democracia .p1 p {
+    width: 100%;
+    text-align: center;
+  }
+}
+.democracia .conteudo-democracia .p1 .btn-mm {
+  display: flex;
+}
+@media (max-width: 838px) {
+  .democracia .conteudo-democracia .p1 .btn-mm {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.democracia .conteudo-democracia .p1 .btn-mm .melhores-momentos {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 100px;
+  background-color: #222;
+  border: 2px #222 solid;
+  font-size: 7vh;
+  transition: 0.4s;
+  color: #fbfbfb;
+  text-decoration: none;
+}
+.democracia .conteudo-democracia .p1 .btn-mm .melhores-momentos:hover {
+  background-color: transparent;
+  transition: 0.4s;
+  color: #222;
+}
+.democracia .conteudo-democracia .p1 .btn-mm .melhores-momentos #animacao-bola {
+  margin-left: 1%;
+  -webkit-animation: sobe 2s ease-in-out infinite;
+          animation: sobe 2s ease-in-out infinite;
+}
+
+.btn-sbm {
+  display: flex;
+}
+@media (max-width: 838px) {
+  .btn-sbm {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.btn-sbm .saiba-mais {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 100px;
+  background-color: #fbfbfb;
+  border: 2px #fbfbfb solid;
+  transition: 0.4s;
+  color: #222;
+  text-decoration: none;
+}
+.btn-sbm .saiba-mais:hover {
+  background-color: transparent;
+  transition: 0.4s;
+  color: #fbfbfb;
+}
+
+.t-idolos {
+  color: #fbfbfb;
+  font-size: 4vh;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  padding-top: 4%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 838px) {
+  .t-idolos {
+    padding-top: 2%;
+  }
+}
+.t-idolos .barra {
+  width: 60px;
+  height: 5px;
+  background-color: #fbfbfb;
+}
+
+.idolos {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5%;
+  background-color: #222;
+}
+.idolos .conteudo-idolos {
+  padding-top: 4%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.idolos .conteudo-idolos .card-idolos {
+  margin-top: 1%;
+  width: 25%;
+  min-width: 300px;
+  height: 100%;
+  min-height: 400px;
+  max-height: 600px;
+  padding: 2%;
+  background: linear-gradient(45deg, #222, #000);
+  color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.8s;
+}
+.idolos .conteudo-idolos .card-idolos:hover {
+  background: linear-gradient(80deg, #222, #000);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.473);
+  color: #fbfbfb;
+  transition: 0.8s;
+}
+.idolos .conteudo-idolos .card-idolos .nome-idolo {
+  font-size: 4vh;
+  font-weight: 900;
+}
+.idolos .conteudo-idolos .card-idolos .posicao {
+  font-size: 2vh;
+}
+.idolos .conteudo-idolos .card-idolos .cassio {
+  width: 200px;
+  height: 200px;
+  background-image: url("../../img/cassio.png");
+  background-size: 100%;
+  border-radius: 100%;
+}
+.idolos .conteudo-idolos .card-idolos .claudio {
+  width: 200px;
+  height: 200px;
+  background-image: url("../../img/claudio.png");
+  background-size: 100%;
+  border-radius: 100%;
+}
+.idolos .conteudo-idolos .card-idolos .marcelinho {
+  width: 200px;
+  height: 200px;
+  background-image: url("../../img/marcelinho.png");
+  background-size: 100%;
+  border-radius: 100%;
+}
+.idolos .conteudo-idolos .modal_cassio, .idolos .conteudo-idolos .modal_claudio, .idolos .conteudo-idolos .modal_marcelinho {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 12, 12, 0.24);
+  position: fixed;
+  display: none;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  top: 0;
+  -webkit-animation: modal 1s ease-in-out;
+          animation: modal 1s ease-in-out;
+  z-index: 999;
+}
+.idolos .conteudo-idolos .modal_cassio .conteudo-modal, .idolos .conteudo-idolos .modal_claudio .conteudo-modal, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal {
+  width: 100%;
+  height: auto;
+}
+.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas {
+  width: 70%;
+  height: 80vh;
+  background-image: url("../../img/bck-titulos.png");
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+@media (max-width: 838px) {
+  .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas {
+    flex-direction: column;
+  }
+}
+.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p1, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p1, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p1 {
+  padding: 2%;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 838px) {
+  .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p1, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p1, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p1 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p1 img, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p1 img, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p1 img {
+  width: 100%;
+}
+@media (max-width: 838px) {
+  .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p1 img, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p1 img, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p1 img {
+    width: 70%;
+  }
+}
+.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p2, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p2, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p2 {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  font-size: 3vh;
+  flex-direction: column;
+}
+@media (max-width: 838px) {
+  .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p2, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p2, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p2 {
+    font-size: 2.5vh;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+  }
+}
+.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p2 .fechar, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p2 .fechar, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p2 .fechar {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 60px;
+  background-color: #000;
+  float: right;
+  cursor: pointer;
+  color: #fbfbfb;
+  font-size: 3vh;
+  transition: 0.4s;
+}
+@media (max-width: 838px) {
+  .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p2 .fechar, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p2 .fechar, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p2 .fechar {
+    font-size: 3vh;
+  }
+}
+.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p2 .fechar:hover, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p2 .fechar:hover, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p2 .fechar:hover {
+  transition: 0.4s;
+  background-color: #f00;
+}
+
+@-webkit-keyframes modal {
+  from {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 2% 0 2% 0;
+  background-image: url("../../img/bck-titulos.png");
+}
+footer span {
+  font-size: 2vh;
+}
+footer .redes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .redes a {
+  padding: 10px;
+  font-size: 4vh;
+  text-decoration: none;
+  color: #222;
+  transition: 0.4s;
+}
+footer .redes a:hover {
+  transform: translateY(-5px);
+  transition: 0.4s;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
