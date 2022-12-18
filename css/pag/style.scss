@@ -292,7 +292,6 @@ section{
         min-height: 110vh;
         height: auto;
         background-image: url('../../img/bannerjapao.png');
-      
         background-position: center;
         background-size: cover;
         display: flex;
@@ -345,7 +344,7 @@ section{
 
             @media(max-width: 838px){
                 width: 100%;
-                height: 60vh;
+                height: 70vh;
             }
 
         }
@@ -384,9 +383,10 @@ section{
             
         }
         
-        
     }
 }
+
+
 
 #animacao-bola{
     margin-left: 1%;
@@ -646,46 +646,6 @@ section{
                     text-align: center;
                 }
             }
-
-            .btn-mm{
-    display: flex;
-    
-
-    @media (max-width: 838px){
-        justify-content: center;
-        align-items: center;
-    }
-
-    .melhores-momentos{
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        width: 100%;
-        max-width: 300px;
-        min-width: 100px;
-        background-color: $preto;
-        border: 2px $preto solid;
-        font-size: 7vh;
-        transition: .4s;
-        color: $branco;
-        text-decoration: none;
-        
-
-        &:hover{
-            background-color: transparent;
-            transition: .4s;
-            color: $preto;
-            
-        }
-        
-        #animacao-bola{
-            margin-left: 1%;
-            animation: sobe 2s ease-in-out infinite; 
-        }
-    }
-}
-
-            
         }
     }
 }
