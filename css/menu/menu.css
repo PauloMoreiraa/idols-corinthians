@@ -18,7 +18,7 @@ p::selection, h1::selection, h2::selection, a::selection, span::selection {
 
 body {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: "Poppins", sans-serif !important;
 }
 
@@ -42,23 +42,9 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
   height: 10vh;
-  width: 100%;
   background-color: transparent;
   padding: 0 5% 0 5%;
   transition: 0.3s;
-}
-.navbar__logo {
-  color: rgba(255, 255, 255, 0.432);
-  font-weight: 900;
-  text-decoration: none;
-  width: 100px;
-  transition: 0.3s;
-  font-size: 4vh;
-  margin-top: -1%;
-  margin-left: 2%;
-}
-.navbar__logo b {
-  color: #fff;
 }
 .navbar ul {
   display: flex;
@@ -85,6 +71,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar.sticky {
   background-color: rgba(0, 0, 0, 0.719);
+  width: 100%;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   height: 7vh;
