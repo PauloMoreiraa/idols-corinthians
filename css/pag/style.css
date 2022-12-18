@@ -19,7 +19,7 @@ p::selection, h1::selection, h2::selection, a::selection, span::selection {
 
 body {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: "Poppins", sans-serif !important;
 }
 
@@ -231,8 +231,8 @@ section .atalho .card .txt-atalho {
   gap: 10px;
 }
 .historia .art1 .composicao .art-img {
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  height: 400px;
   background-image: url("../../img/art1.png");
   background-repeat: no-repeat;
   background-size: 100%;

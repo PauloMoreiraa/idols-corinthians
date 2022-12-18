@@ -15,11 +15,16 @@ $japao: #fff3e5;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 p::selection, h1::selection, h2::selection, a::selection, span::selection{
   color: $branco;
   background-color: rgba(34, 34, 34, 0.644);
+}
+
+div{
+  overflow-x: hidden;
 }
 
 body{

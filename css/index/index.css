@@ -16,6 +16,10 @@ p::selection, h1::selection, h2::selection, a::selection, span::selection {
   background-color: rgba(34, 34, 34, 0.644);
 }
 
+div {
+  overflow-x: hidden;
+}
+
 body {
   width: 100%;
   overflow-x: hidden !important;
