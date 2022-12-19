@@ -272,6 +272,11 @@ section .atalho .card .txt-atalho {
 .slider-escudo .escudos .item img {
   width: 200px;
 }
+@media (max-width: 838px) {
+  .slider-escudo .escudos .item img {
+    width: 100px;
+  }
+}
 
 .t-topicos {
   font-size: 7vh;

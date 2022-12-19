@@ -258,6 +258,10 @@ section{
             }
             img{
                 width: 200px;
+
+                @media (max-width: 838px){
+                    width: 100px;
+                }
             }
         }
     }
