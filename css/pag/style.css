@@ -245,8 +245,8 @@ section .atalho .card .txt-atalho {
   gap: 10px;
 }
 .historia .art1 .composicao .art-img {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   background-image: url("../../img/art1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -771,7 +771,7 @@ section .atalho .card .txt-atalho {
 }
 .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas {
   width: 70%;
-  height: 90vh;
+  height: 80vh;
   background-image: url("../../img/bck-titulos.png");
   background-size: cover;
   position: absolute;
@@ -782,10 +782,34 @@ section .atalho .card .txt-atalho {
   transform: translate(-50%, -50%);
   display: flex;
 }
+.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .fechar, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .fechar, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .fechar {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 60px;
+  background-color: #000;
+  float: right;
+  cursor: pointer;
+  color: #fbfbfb;
+  font-size: 3vh;
+  transition: 0.4s;
+}
+@media (max-width: 838px) {
+  .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .fechar, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .fechar, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .fechar {
+    font-size: 3vh;
+  }
+}
+.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .fechar:hover, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .fechar:hover, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .fechar:hover {
+  transition: 0.4s;
+  background-color: #f00;
+}
 @media (max-width: 838px) {
   .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas {
     flex-direction: column;
     width: 90%;
+    height: 90vh;
   }
 }
 .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p1, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p1, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p1 {
@@ -827,29 +851,6 @@ section .atalho .card .txt-atalho {
     text-align: center;
     align-items: center;
   }
-}
-.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p2 .fechar, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p2 .fechar, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p2 .fechar {
-  margin-top: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  height: 60px;
-  background-color: #000;
-  float: right;
-  cursor: pointer;
-  color: #fbfbfb;
-  font-size: 3vh;
-  transition: 0.4s;
-}
-@media (max-width: 838px) {
-  .idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p2 .fechar, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p2 .fechar, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p2 .fechar {
-    font-size: 3vh;
-  }
-}
-.idolos .conteudo-idolos .modal_cassio .conteudo-modal .estatisticas .p2 .fechar:hover, .idolos .conteudo-idolos .modal_claudio .conteudo-modal .estatisticas .p2 .fechar:hover, .idolos .conteudo-idolos .modal_marcelinho .conteudo-modal .estatisticas .p2 .fechar:hover {
-  transition: 0.4s;
-  background-color: #f00;
 }
 
 @-webkit-keyframes modal {

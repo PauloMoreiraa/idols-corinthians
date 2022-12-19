@@ -223,8 +223,8 @@ section{
             gap: 10px;
 
             .art-img{
-                width: 400px;
-                height: 400px;
+                width: 500px;
+                height: 500px;
                 background-image: url('../../img/art1.png');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -808,7 +808,7 @@ section{
                
                 .estatisticas{
                     width: 70%;
-                    height: 90vh;
+                    height: 80vh;
                     background-image: url('../../img/bck-titulos.png');
                     background-size: cover;
                     position: absolute;
@@ -819,9 +819,35 @@ section{
                     transform: translate(-50%, -50%);
                     display: flex;
 
+                    .fechar{
+                        margin-top: 2%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40%;
+                        height: 60px;
+                        background-color: #000;
+                        
+                        float: right;
+                        cursor: pointer;
+                        color: $branco;
+                        font-size: 3vh;
+                        transition: .4s;
+
+                        @media (max-width: 838px){
+                            font-size: 3vh;
+                        }
+            
+                        &:hover{
+                            transition: .4s;
+                            background-color: #f00;
+                        }
+                    }
+
                     @media (max-width: 838px){
                         flex-direction: column;
                         width: 90%;
+                        height: 90vh;
                         
                     }
 
@@ -864,30 +890,7 @@ section{
                             align-items: center;
                         }
 
-                        .fechar{
-                            margin-top: 2%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 40%;
-                            height: 60px;
-                            background-color: #000;
-                            
-                            float: right;
-                            cursor: pointer;
-                            color: $branco;
-                            font-size: 3vh;
-                            transition: .4s;
-
-                            @media (max-width: 838px){
-                                font-size: 3vh;
-                            }
-                
-                            &:hover{
-                                transition: .4s;
-                                background-color: #f00;
-                            }
-                        }
+                        
                     }
 
                 }
