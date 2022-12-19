@@ -77,6 +77,8 @@ body::-webkit-scrollbar-thumb {
 .titulo-sliders {
   font-size: 10vh;
   color: #fff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
   font-weight: 900;
   text-align: center;
 }
